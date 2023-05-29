@@ -1,0 +1,158 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: hsl(180, 66%, 49%);
+    --dark-violet: rgb(59, 48, 84);
+    --red: rgb(247, 141, 141);
+    --gray: rgb(191, 191, 191);
+    --grayish-violet: rgb(158, 154, 167);
+    --very-dark-blue: rgb(53, 50, 62);
+    --very-dark-violet: rgb(35, 33, 39);
+}
+
+body {
+    font-size: 18px;
+    font-family: "poppins", "sans-serif";
+    margin: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.left {
+    display: flex;
+}
+
+.left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.left ul a {
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    color: var(--grayish-violet);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.right {
+    margin-left: 0.5rem;
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.right ul a {
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    color: var(--grayish-violet);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.right ul .active {
+    background-color: var(--cyan);
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 1.5rem;
+    height: 0.2rem;
+    margin: 0.3rem auto;
+    transition: all 0.4s ease-in-out;
+    background: black;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    max-width: 30rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.content p {
+    color: var(--grayish-violet);
+    margin: 0.5rem;
+}
+
+.content .btn {
+    background: var(--cyan);
+    color: white;
+    padding: 0.5rem 1.7rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+.image img {
+    width: 85%;
+}
+
+.input-container {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark-violet);
+    padding: 1rem 1.5rem;
+    position: relative;
+    width: min(100%, 40rem);
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+input {
+    padding: 0.6rem 0.3rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    margin: 0.5rem;
+    flex: 1;
+}
+.input-btn {
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    background: var(--cyan);
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
